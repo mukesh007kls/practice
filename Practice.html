@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="firstNumber">
+            <label class="label text" for="firstName">First Number:</label>
+            <input class="input" type="text" name="firstNumber" id="firstNumber" placeholder="Enter first number" required>
+        </div>
+        <div class="secondNumber">
+            <label class="label text" for="secondName">Second Number:</label>
+            <input class="input" type="text" name="secondNumber" id="secondNumber" placeholder="Enter Second number" required>
+        </div>
+        <div class="operation">
+            <label for="operation">Operations:</label>
+            <div>
+                <input class="radio" type="radio" name="operation" id="addition" value="add">
+                <label class="text" for="addition">Add</label>
+                <input class="radio" type="radio" name="operation" id="subraction" value="sub">
+                <label class="text" for="subraction">Subraction</label>
+                <input class="radio" type="radio" name="operation" id="multiplication" value="multi">
+                <label class="text" for="multiplication">Multiplication</label>
+                <input class="radio" type="radio" name="operation" id="division" value="div">
+                <label class="text" for="division">Division</label>
+            </div>
+            <button type="submit" class="button" onclick="result()">Submit</button>
+        </div>
+        <p id="result"></p>
+        <script src="../script.js"></script>
+    </body>
+</html>
